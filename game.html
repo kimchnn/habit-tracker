@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="game-styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+    <title>little💜steps</title>
+</head>
+<body>
+    <section class="navbar">
+        <nav>
+            <div class="logo">little💜steps</div>
+            <div class="links">
+                <a href="">Habits</a>
+                <a href="">Tips</a>
+                <a href="">Profile</a>
+                <a href="" class="game">Game</a>
+            </div>
+        </nav>
+    </section>
+
+    <section class="game">
+        <h1>little💜steps</h1>
+        <div class="game-container">
+            <div class="info-container" id="info-container">
+                <div class="account-container">
+                    <h3>Account Information</h3>
+                    <h3>Name:<span id="account-name"></span></h3>
+                    <h3>Email:<span id="account-email"></span></h3>
+                </div>
+                <div class="balance-container">
+                    <h3>Balance <span id="balance"></span></h3> 
+                </div>
+                <div class="inventory-container">
+                    <h3>Inventory</h3>
+                    <ul class="inventory-list" id="inventory-list">
+                        
+                    </ul>
+                  </div>
+            </div>          
+            <img src="https://i.ibb.co/ZT0hcJd/dino0.png" alt="dino-img" class="dino" id="dino-image">
+
+            <div class="health-bar-container">
+                <div id="health-bar" class="health-bar">
+                    <div id="health-fill"></div>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+/* game.html */
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    margin-top: 5%;
+    position: relative;
+    width: 100%;
+}
+
+.dino {
+    width: 150px; 
+    height: auto;
+}
+
+.health-bar-container {
+    width: 60%;
+    max-width: 300px; 
+    text-align: center;
+}
+
+.health-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #fff;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#health-fill {
+    height: 100%;
+    width: 100%; 
+    background-color: rebeccapurple; 
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+.info-container {
+    position: absolute;
+    background-color: #fff;
+    left: 10%; 
+    top: 0%; 
+    padding: 15px;
+    width: 250px;
+}
+
+h3 {
+    font-size: 16px;
+    color: #000000;
+    font-weight: 300;
+    margin: 2.5px;
+}
+
+.account-container {
+    background-color: #ECECEC;
+    padding: 10px;
+}
+
+.balance-container {
+    background-color: #ECECEC;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+#balance {
+    background-color: #FFC778;
+    font-size: 16px;
+    color: rebeccapurple;
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.inventory-container h3 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+#inventory-items {
+    margin-bottom: 15px;
+}
+
+#inventory-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive grid layout */
+    gap: 10px;
+    list-style-type: none; 
+    padding: 0;
+    margin: 0; 
+}
+
+#inventory-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #ddd; 
+    border-radius: 10px; 
+    padding: 15px; 
+    background-color: #ECECEC; 
+}
+
+.inventory-item-image {
+    width: 70px;
+    height: 70px;
+    object-fit: contain; 
+    margin-bottom: 5px; 
+}
+
+.item-description {
+    font-size: 16px; 
+    color: rebeccapurple; 
+    text-align: center; 
+    margin-bottom: 5px; 
+}
+
+.buy-button {
+    background-color: #FFC778;
+    color: rebeccapurple;
+    font-size: 16px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: rebeccapurple;
+    color: #fff;
+}
+
+.notification {
+    display: flex; 
+    align-items: center; 
+    position: relative; 
+    left: 70%; 
+
+    width: 200px;  
+    height: auto;   
+    
+    font-size: 16px;
+    padding: 15px 25px;
+
+    background-color: rebeccapurple;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
